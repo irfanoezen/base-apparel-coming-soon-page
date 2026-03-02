@@ -1,3 +1,12 @@
+:root {
+  --grey-900: #423A3A;
+  --red-400: #F96464;
+  --pink-400: #CE9898;
+  --gradient-1: linear-gradient(-84deg, #F8BFBF, #EE8B8B);
+  --gradient-2: linear-gradient(-79deg, #FFFFFF, #FFF4F4);
+  --gradient-3: linear-gradient(83deg, #FFF1F1, #FFFFFF);
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
