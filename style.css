@@ -1,10 +1,35 @@
 :root {
-  --grey-900: #423A3A;
-  --red-400: #F96464;
-  --pink-400: #CE9898;
-  --gradient-1: linear-gradient(-84deg, #F8BFBF, #EE8B8B);
-  --gradient-2: linear-gradient(-79deg, #FFFFFF, #FFF4F4);
-  --gradient-3: linear-gradient(83deg, #FFF1F1, #FFFFFF);
+  --grey-900: #423a3a;
+  --red-400: #f96464;
+  --pink-400: #ce9898;
+  --gradient-1: linear-gradient(-84deg, #f8bfbf, #ee8b8b);
+  --gradient-2: linear-gradient(-79deg, #ffffff, #fff4f4);
+  --gradient-3: linear-gradient(83deg, #fff1f1, #ffffff);
+}
+
+/* josefin-sans-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("assets/fonts/josefin-sans-v34-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* josefin-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/josefin-sans-v34-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* josefin-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("assets/fonts/josefin-sans-v34-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -27,6 +52,7 @@
 }
 
 body {
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   /* 4. Add accessible line-height */
   line-height: 1.5;
   /* 5. Improve text rendering */
