@@ -2,7 +2,7 @@
   --grey-900: #423a3a;
   --red-400: #f96464;
   --pink-400: #ce9898;
-  --gradient-1: linear-gradient(-84deg, #f8bfbf, #ee8b8b);
+  --gradient-1: linear-gradient(84deg, #f8bfbf, #ee8b8b);
   --gradient-2: linear-gradient(-79deg, #ffffff, #fff4f4);
   --gradient-3: linear-gradient(83deg, #fff1f1, #ffffff);
 }
@@ -76,4 +76,138 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+main {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+.hero__img-container {
+  grid-row: 2 / 3;
+}
+
+.hero__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  padding-block: 32px;
+  padding-inline-start: 34px;
+}
+
+.content {
+  padding: 64px 32px 92px 32px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: var(--grey-900);
+  text-align: center;
+  margin-block-end: 16px;
+
+  span {
+    font-weight: 300;
+    color: var(--pink-400);
+  }
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--pink-400);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.form {
+  position: relative;
+}
+
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 8px 24px;
+  border-radius: 28px;
+  border: solid 1px var(--pink-400);
+  line-height: 1.85;
+  color: var(--pink-400);
+  outline: none;
+}
+
+.submit-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 64px;
+  height: 48px;
+  border-radius: 28px;
+  border: none;
+  background: var(--gradient-1);
+  box-shadow: 0 15px 20px 0 hsla(0, 44%, 60%, 24%);
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-inline-start: 80px;
+  }
+
+  .hero__img-container {
+    height: 400px;
+  }
+
+  .content {
+    padding: 64px 161.5px 62px 161.5px;
+  }
+
+  .title {
+    font-size: 64px;
+    line-height: 1.1;
+    letter-spacing: 17.5px;
+    margin-block-end: 32px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 2.15;
+    width: 45ch;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    grid-template-columns: auto 610px;
+  }
+
+  .hero__img-container {
+    height: 100%;
+    grid-row: 1 / -1;
+    grid-column: 2 / -1;
+  }
+
+  .content {
+    padding: 136px 220px 139px 165px;
+  }
+
+  .logo {
+    padding-block-start: 80px;
+    padding-bottom: 0;
+    padding-inline-start: 165px;
+  }
+
+  .title,
+  .text {
+    text-align: left;
+  }
 }
